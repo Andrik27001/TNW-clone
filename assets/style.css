@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Helvetica,Arial,sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 nav {
@@ -91,4 +91,34 @@ main {
 
 .moon-section > ul {
   display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: #ff4422;
+}
+
+.latest-news {
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-news figure {
+  flex: 1;
+  margin: 10px 5px;
+}
+.latest-news figure img {
+  float: left;
+}
+.latest-news figure div {
+  margin-left: 85px;
+}
+
+.latest-news ul {
+  margin-top: 5px;
+}
+
+.latest-news ul li {
+  display: inline-block;
+  margin-left: 5px;
 }
