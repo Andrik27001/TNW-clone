@@ -164,6 +164,18 @@ section {
 .latest-news {
   display: flex;
   flex-direction: column;
+  line-height: 22px;
+}
+
+.latest-news a {
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+} 
+
+.latest-news a:hover {
+  color: #ff4422;
+  text-decoration: underline #ff3b1969;
 }
 
 .latest-news figure {
@@ -179,8 +191,21 @@ section {
   margin-left: 85px;
 }
 
-.latest-news ul li {
+.latest-news li > a {
+  font-size: 12px;
+  color: #AAA;
+  font-weight: normal;
+}
+
+.latest-news li > a:hover {
+  color: #555;
+  text-decoration: none;
+}
+
+.latest-news ul > li {
   display: inline-block;
+  font-size: 12px;
+  color: #AAA;
 }
 
 .latest-links > ul {
@@ -304,7 +329,6 @@ a {
   height: 96px;
   color: #f42;
   margin: auto 0;
-  background-color: ;
 }
 
 .container-2 h5 {
@@ -355,7 +379,7 @@ a {
 .deals-section {
   display: flex;
   flex-direction: column;
-  line-height: 24px;
+  line-height: 22px;
 }
 
 .deals-section a {
@@ -363,6 +387,11 @@ a {
   padding-left: 90px;
   color: black;
   font-weight: bold;
+}
+
+.deals-section a:hover {
+  color: #ff4422;
+  text-decoration: underline #ff3b1969;
 }
 
 .deals-section span {
