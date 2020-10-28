@@ -5,12 +5,18 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
-
-h2 {
+h2 a{
+  display: block;
+  text-decoration: none;
   color: #ff4422;
   font-family: sans-serif;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: bold;
+  padding: 24px 0px 8px 0px;
+}
+
+h2 a:hover {
+  color: black;
 }
 
 nav {
@@ -35,11 +41,13 @@ nav a {
   text-align: center;
   display: flex;
   align-content: center;
+  z-index: 999;
 }
 
-.logo-image img {
+.logo-image > img {
   align-self: center;
   margin: auto;
+  z-index: 999;
 }
 
 .nav-logo {
@@ -64,9 +72,14 @@ nav a {
   border: 1px solid rgb(243, 243, 243);
 }
 
-main {
+section {
   width: 100%;
-  padding: 55px 8px;
+  padding: 0px 20px;
+}
+
+.first-sec {
+  width: 100%;
+  padding: 0px 8px;
 }
 
 .moon-section {
@@ -80,7 +93,7 @@ main {
   background-position: center;
   min-height: 247px;
   width: 100%;
-  padding: 14px 12px;
+  padding: 15px 12px;
 }
 
 .moon-section > time {
@@ -136,10 +149,6 @@ main {
   color: #ffffff99;
 }
 
-.moon-text p {
-  margin-right: 10px;
-}
-
 .moon-text a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
@@ -153,7 +162,7 @@ main {
 
 .latest-news figure {
   flex: 1;
-  margin: 7px 12px;
+  margin: 7px 0px;
 }
 
 .latest-news figure img {
@@ -168,3 +177,77 @@ main {
   display: inline-block;
 }
 
+.latest-links > ul {
+  margin-bottom: 18px;
+}
+
+.latest-funding li, a {
+  list-style: none;
+  text-decoration: none;
+  color: #555;
+  display: block;
+}
+
+.latest-links li > a {
+  color: #ff4422;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.latest-funding h3 {
+  color: white;
+  background-color: #ff4422;
+  padding: 10px 0px 10px 84px;
+}
+
+.second-div {
+  background-color: #ff3c1914;
+  line-height: 18px;
+  padding: 10px 0px 10px 84px;
+}
+
+.second-div > h4 {
+  font-size: 18px;
+}
+
+.second-div > h5 {
+  font-family: sans-serif;
+  font-size: 11px;
+  font-weight: 100;
+  color: #999;
+}
+
+.third-div {
+  font-size: 13px;
+  line-height: 28px;
+  background-color:  #ffcfc514;
+  padding: 16px;
+  border-bottom: 1px solid #ffcbc1;
+}
+
+.third-div > a {
+  padding: 0px 2px;
+}
+
+.third-div .iconify {
+  color: #222;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.latest-funding > img {
+  float: left;
+  position: relative;
+  margin: 11px 0px 0px 11px;
+}
+
+.fourth-div {
+  font-size: 12px;
+  padding: 12px 16px 34px;
+  margin-bottom: 4px;
+  background-color:  #ffcfc514; 
+}
+
+.fourth-div a > span {
+  color: #AAA;
+}
