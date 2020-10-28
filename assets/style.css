@@ -12,7 +12,7 @@ h2 a {
   font-family: sans-serif;
   font-size: 28px;
   font-weight: bold;
-  padding: 24px 0px 8px 0px;
+  padding: 22px 0px 22px 0px;
 }
 
 h2 a:hover {
@@ -24,6 +24,7 @@ nav {
   top: 0;
   width: 100%;
   background-color: #fff;
+  z-index: 99;
 }
 nav a {
   display: none;
@@ -170,7 +171,7 @@ section {
   margin: 7px 0px;
 }
 
-.latest-news figure img {
+.latest-news img {
   float: left;
 }
 
@@ -206,24 +207,24 @@ a {
   padding: 10px 0px 10px 84px;
 }
 
-.second-div {
+.funding-div1 {
   background-color: #ff3c1914;
   line-height: 18px;
   padding: 10px 0px 10px 84px;
 }
 
-.second-div > h4 {
+.funding-div1 > h4 {
   font-size: 18px;
 }
 
-.second-div > h5 {
+.funding-div1 > h5 {
   font-family: sans-serif;
   font-size: 11px;
   font-weight: 100;
   color: #999;
 }
 
-.third-div {
+.funding-div2 {
   font-size: 13px;
   line-height: 28px;
   background-color: #ffcfc514;
@@ -231,11 +232,11 @@ a {
   border-bottom: 1px solid #ffcbc1;
 }
 
-.third-div > a {
+.funding-div2 > a {
   padding: 0px 2px;
 }
 
-.third-div .iconify {
+.funding-div2 .iconify {
   color: #222;
   font-size: 16px;
   margin-right: 10px;
@@ -247,14 +248,14 @@ a {
   margin: 11px 0px 0px 11px;
 }
 
-.fourth-div {
+.funding-div3 {
   font-size: 12px;
   padding: 12px 16px 34px;
   margin-bottom: 4px;
   background-color: #ffcfc514;
 }
 
-.fourth-div a > span {
+.funding-div3 a > span {
   color: #aaa;
 }
 
@@ -334,4 +335,54 @@ a {
 .most-popular ul li a {
   text-decoration: none;
   color: #444;
+}
+
+.deals-headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deals-headers > a {
+  color: #ff4422;
+  font-size: 14px;
+}
+
+.deals-headers > a:hover {
+  color: #444;
+}
+
+.deals-section {
+  display: flex;
+  flex-direction: column;
+  line-height: 24px;
+}
+
+.deals-section a {
+  font-size: 14px;
+  padding-left: 90px;
+  color: black;
+  font-weight: bold;
+}
+
+.deals-section span {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.span1 {
+  padding-left: 14px;
+  color: #AAA;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.deals-section figure {
+  margin: 7px 0px;
+}
+
+.deals-section img {
+  float: left;
+  width: 75px;
+  height: 75px;
 }
