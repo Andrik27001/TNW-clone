@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/style.css">
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   <title>Document</title>
 </head>
 <body>
@@ -25,11 +28,11 @@
           <a href="#">Contact</a>
         </div>
       </div>
-     <div class="nav-logo">
+    <div class="nav-logo">
       <div>
-       <div class="logo-image">
-        <img src="images/logo2.0.png" alt="logo" width="76px" height="22px">
-       </div>
+      <div class="logo-image">
+        <img src="images/logo2.0.png" alt="logo" width="68px" height="19px">
+      </div>
         <a href="#">Latest</a>
         <a href="#">Hard fork</a>
         <a href="#">plugged</a>
@@ -38,51 +41,34 @@
         <a href="#">Shift</a>
         <a href="#">Neural</a>
       </div>
-      <div>
-      <button><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" height="2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" fill="#626262"/></svg></button>
-      <button>
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1.7em" height="1.7em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path fill="#626262" d="M80 96h352v32H80z"/><path fill="#626262" d="M80 240h352v32H80z"/><path fill="#626262" d="M80 384h352v32H80z"/></svg>
-      </button></div>
-     </div>
+      <div class="nav-icons">
+        <button class="icon1">
+          <span class="iconify" data-icon="foundation:magnifying-glass" data-inline="false"></span>
+        </button>
+        <button class="icon2">
+          <span class="iconify" data-icon="radix-icons:hamburger-menu" data-inline="false"></span>
+        </button>
+      </div>
+    </div>
     </nav>
   </header>
   <main>
     <section>
       <div class="moon-section">
-        <time timedate="2020-10-29">
-          Tuesday — October 27, 2020
-        </time>
-          <a href="#">INSIGHTS</a>
-        <p>
-          Uber is being sued by drivers claiming to have been sacked by its algorith
-        </p>
-        <ul>
-          <li>by <a href="#">Matthew Beedham</a> </li>
-          <li> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8s8 3.589 8 8s-3.589 8-8 8z" fill="#626262"/><path d="M13 7h-2v5.414l3.293 3.293l1.414-1.414L13 11.586z" fill="#626262"/></svg>1 hour ago</li>
-          <li> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="0.88em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512"><path d="M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 0 0 0-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 0 0 256 416c0 53.019 42.981 96 96 96s96-42.981 96-96s-42.981-96-96-96z" fill="#626262"/></svg>5</li>
-        </ul>
+        <time timedate="2020-10-29">Tuesday — October 27, 2020</time>
+        <a class="moon-title" href="#">INSIGHTS</a>
+        <h3 class="moon-subtitle"><a href="#">Uber is being sued by drivers claiming to have been sacked by its algorithm</a></h3>
+        <p>by <a id="subt" href="#">Matthew Beedham</a><span class="iconify" data-icon="ant-design:clock-circle-outlined" data-inline="false"> </span>1 hour ago<span class="iconify" data-icon="fa-solid:share-alt" data-inline="false"></span>5</p>
       </div>
       <div class="moon-section">
-        <a> INSIGHTS</a>
-        <p>
-          Uber is being sued by drivers claiming to have been sacked by its algorith
-        </p>
-        <ul>
-          <li>by <a href="#">Matthew Beedham</a> </li>
-          <li> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8s8 3.589 8 8s-3.589 8-8 8z" fill="#626262"/><path d="M13 7h-2v5.414l3.293 3.293l1.414-1.414L13 11.586z" fill="#626262"/></svg>1 hour ago</li>
-          <li> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512"><path d="M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 0 0 0-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 0 0 256 416c0 53.019 42.981 96 96 96s96-42.981 96-96s-42.981-96-96-96z" fill="#626262"/></svg>5</li>
-        </ul>
+        <a class="moon-title" href="#">INSIGHTS</a>
+        <h3 class="moon-subtitle"><a href="#">Uber is being sued by drivers claiming to have been sacked by its algorithm</a></h3>
+        <p>by <a id="subt" href="#">Matthew Beedham</a><span class="iconify" data-icon="ant-design:clock-circle-outlined" data-inline="false"> </span>1 hour ago<span class="iconify" data-icon="fa-solid:share-alt" data-inline="false"></span>5</p>
       </div>
       <div class="moon-section">
-        <a> INSIGHTS</a>
-        <p>
-          Uber is being sued by drivers claiming to have been sacked by its algorith
-        </p>
-        <ul>
-          <li>by <a href="#">Matthew Beedham</a> </li>
-          <li> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8s8 3.589 8 8s-3.589 8-8 8z" fill="#626262"/><path d="M13 7h-2v5.414l3.293 3.293l1.414-1.414L13 11.586z" fill="#626262"/></svg>1 hour ago</li>
-          <li> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="0.88em" height="1em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512"><path d="M352 320c-22.608 0-43.387 7.819-59.79 20.895l-102.486-64.054a96.551 96.551 0 0 0 0-41.683l102.486-64.054C308.613 184.181 329.392 192 352 192c53.019 0 96-42.981 96-96S405.019 0 352 0s-96 42.981-96 96c0 7.158.79 14.13 2.276 20.841L155.79 180.895C139.387 167.819 118.608 160 96 160c-53.019 0-96 42.981-96 96s42.981 96 96 96c22.608 0 43.387-7.819 59.79-20.895l102.486 64.054A96.301 96.301 0 0 0 256 416c0 53.019 42.981 96 96 96s96-42.981 96-96s-42.981-96-96-96z" fill="#626262"/></svg>5</li>
-        </ul>
+        <a class="moon-title" href="#">INSIGHTS</a>
+        <h3 class="moon-subtitle"><a href="#">Uber is being sued by drivers claiming to have been sacked by its algorithm</a></h3>
+        <p>by <a id="subt" href="#">Matthew Beedham</a><span class="iconify" data-icon="ant-design:clock-circle-outlined" data-inline="false"> </span>1 hour ago<span class="iconify" data-icon="fa-solid:share-alt" data-inline="false"></span>5</p>
       </div>
     </section>
     <section >
@@ -95,7 +81,7 @@
               <p>Destruction AllStars goes from PS5 launch title to free PS Plus game</p>
               <ul>
                 <li><a href="#">Rachel Kaser</a></li>
-                <li>13 hours ago</li>
+                <li>· 13 hours ago</li>
               </ul>
             </figcaption>
           </div>
@@ -107,67 +93,7 @@
               <p>Destruction AllStars goes from PS5 launch title to free PS Plus game</p>
               <ul>
                 <li><a href="#">Rachel Kaser</a></li>
-                <li>13 hours ago</li>
-              </ul>
-          </div>
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="images/allstars.jpg" alt="AllStars" width="75" height="75">
-         <div>
-          <figcaption>
-            <p>Destruction AllStars goes from PS5 launch title to free PS Plus game</p>
-            <ul>
-              <li><a href="#">Rachel Kaser</a></li>
-              <li>13 hours ago</li>
-            </ul>
-          </figcaption>
-         </div>
-        </figure>
-        <figure>
-          <img src="images/allstars.jpg" alt="AllStars" width="75" height="75">
-         <div>
-          <figcaption>
-            <p>Destruction AllStars goes from PS5 launch title to free PS Plus game</p>
-            <ul>
-              <li><a href="#">Rachel Kaser</a></li>
-              <li>13 hours ago</li>
-            </ul>
-          </figcaption>
-         </div>
-        </figure>
-        <figure>
-          <img src="images/allstars.jpg" alt="AllStars" width="75" height="75">
-         <div>
-          <figcaption>
-            <p>Destruction AllStars goes from PS5 launch title to free PS Plus game</p>
-            <ul>
-              <li><a href="#">Rachel Kaser</a></li>
-              <li>13 hours ago</li>
-            </ul>
-          </figcaption>
-         </div>
-        </figure>
-        <figure>
-          <img src="images/allstars.jpg" alt="AllStars" width="75" height="75">
-          <div>
-            <figcaption>
-              <p>Destruction AllStars goes from PS5 launch title to free PS Plus game</p>
-              <ul>
-                <li><a href="#">Rachel Kaser</a></li>
-                <li>13 hours ago</li>
-              </ul>
-            </figcaption>
-          </div>
-        </figure>
-        <figure>
-          <img src="images/allstars.jpg" alt="AllStars" width="75" height="75">
-          <div>
-            <figcaption>
-              <p>Destruction AllStars goes from PS5 launch title to free PS Plus game</p>
-              <ul>
-                <li><a href="#">Rachel Kaser</a></li>
-                <li>13 hours ago</li>
+                <li>· 13 hours ago</li>
               </ul>
             </figcaption>
           </div>
@@ -179,7 +105,67 @@
             <p>Destruction AllStars goes from PS5 launch title to free PS Plus game</p>
             <ul>
               <li><a href="#">Rachel Kaser</a></li>
-              <li>13 hours ago</li>
+              <li>· 13 hours ago</li>
+            </ul>
+          </figcaption>
+         </div>
+        </figure>
+        <figure>
+          <img src="images/allstars.jpg" alt="AllStars" width="75" height="75">
+         <div>
+          <figcaption>
+            <p>Destruction AllStars goes from PS5 launch title to free PS Plus game</p>
+            <ul>
+              <li><a href="#">Rachel Kaser</a></li>
+              <li>· 13 hours ago</li>
+            </ul>
+          </figcaption>
+         </div>
+        </figure>
+        <figure>
+          <img src="images/allstars.jpg" alt="AllStars" width="75" height="75">
+         <div>
+          <figcaption>
+            <p>Destruction AllStars goes from PS5 launch title to free PS Plus game</p>
+            <ul>
+              <li><a href="#">Rachel Kaser</a></li>
+              <li>· 13 hours ago</li>
+            </ul>
+          </figcaption>
+         </div>
+        </figure>
+        <figure>
+          <img src="images/allstars.jpg" alt="AllStars" width="75" height="75">
+          <div>
+            <figcaption>
+              <p>Destruction AllStars goes from PS5 launch title to free PS Plus game</p>
+              <ul>
+                <li><a href="#">Rachel Kaser</a></li>
+                <li>· 13 hours ago</li>
+              </ul>
+            </figcaption>
+          </div>
+        </figure>
+        <figure>
+          <img src="images/allstars.jpg" alt="AllStars" width="75" height="75">
+          <div>
+            <figcaption>
+              <p>Destruction AllStars goes from PS5 launch title to free PS Plus game</p>
+              <ul>
+                <li><a href="#">Rachel Kaser</a></li>
+                <li>· 13 hours ago</li>
+              </ul>
+            </figcaption>
+          </div>
+        </figure>
+        <figure>
+          <img src="images/allstars.jpg" alt="AllStars" width="75" height="75">
+         <div>
+          <figcaption>
+            <p>Destruction AllStars goes from PS5 launch title to free PS Plus game</p>
+            <ul>
+              <li><a href="#">Rachel Kaser</a></li>
+              <li>· 13 hours ago</li>
             </ul>
           </figcaption>
          </div>
