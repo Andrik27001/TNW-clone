@@ -192,20 +192,20 @@ section {
   }
 }
 
-%link {
+@mixin link {
   list-style: none;
   text-decoration: none;
 }
 
 a {
-  @extend:link !optional;
+  @include link;
 
   color: #555;
   display: block;
 }
 
 h2 a {
-  @extend:link !optional;
+  @include link;
 
   color: $main-color;
   font-family: sans-serif;
@@ -416,13 +416,14 @@ h2 a {
   margin-top: 100px;
   padding: 0;
 }
-%footer-display {
+
+@mixin footer-display {
   display: flex;
   justify-content: center;
 }
 
 .footer-icons {
-  @extend %footer-display;
+  @include footer-display;
 
   align-items: center;
   background-color: #131313;
@@ -430,7 +431,7 @@ h2 a {
 }
 
 .footer-links ul {
-  @extend %footer-display;
+  @include footer-display;
 
   align-items: center;
   list-style: none;
@@ -449,7 +450,7 @@ h2 a {
 }
 
 .foot-desc {
-  @extend %footer-display;
+  @include footer-display;
 
   flex-direction: column;
   text-align: center;
@@ -505,13 +506,14 @@ h2 a:hover {
     z-index: 2;
     margin-bottom: 8px;
   }
-  %tablet-display {
+
+  @mixin tablet-display {
     display: flex;
     justify-content: space-between;
   }
 
   .nav-negra {
-    @extend %tablet-display;
+    @include tablet-display;
 
     align-items: center;
     font-size: 13px;
@@ -529,14 +531,14 @@ h2 a:hover {
   }
 
   .left ul {
-    @extend %tablet-display;
+    @include tablet-display;
 
     width: 376px;
     margin-left: 126px;
   }
 
   .right ul {
-    @extend %tablet-display;
+    @include tablet-display;
 
     width: 200px;
     margin-right: 20px;
@@ -557,7 +559,7 @@ h2 a:hover {
 
   .nav-blanca,
   .nav-blanca2 {
-    @extend %tablet-display;
+    @include tablet-display;
 
     max-height: 48px;
     align-items: center;
@@ -575,7 +577,7 @@ h2 a:hover {
 
   .nav-blanca ul,
   .nav-blanca2 ul {
-    @extend %tablet-display;
+    @include tablet-display;
 
     max-height: 48px;
     align-items: center;
